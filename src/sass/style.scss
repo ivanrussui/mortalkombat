@@ -37,8 +37,6 @@ a {
 }
 .app {
 	background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 44.9%);
-	// background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
-	// 	url("../img/cover-image.jpg") no-repeat center right;
 	min-height: 100vh;
 	color: #fff;
 }
@@ -95,11 +93,11 @@ a {
 	}
 }
 
-@media (max-width: 1200px) {
+// @media (max-width: 1200px) {
 	// .app {
 	// 	background-size: 50%;
 	// }
-}
+// }
 @media (max-width: 768px) {
 	.app {
 		height: auto;
@@ -109,11 +107,6 @@ a {
 	video {
 		display: none;
 	}
-	// .app {
-	// 	height: auto;
-	// 	padding-bottom: 400px;
-	// 	background-position: bottom center;
-	// }
 	.film {
 		padding-top: 2%;
 		&__desrc {
