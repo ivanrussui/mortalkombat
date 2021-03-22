@@ -36,8 +36,9 @@ a {
 	}
 }
 .app {
-	background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
-		url("../img/cover-image.jpg") no-repeat top right;
+	background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 44.9%);
+	// background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
+	// 	url("../img/cover-image.jpg") no-repeat center right;
 	min-height: 100vh;
 	color: #fff;
 }
@@ -57,6 +58,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	flex-wrap: wrap;
 	padding-top: 18px;
 	color: #e5e5e5;
 	opacity: 0.4;
@@ -64,6 +66,7 @@ a {
 	line-height: 140%;
 	> * {
 		margin-right: 15px;
+		margin-bottom: 10px;
 	}
 	&__age {
 		opacity: 0.5;
@@ -89,5 +92,52 @@ a {
 	&__text {
 		margin-left: 10px;
 		vertical-align: text-bottom;
+	}
+}
+
+@media (max-width: 1200px) {
+	// .app {
+	// 	background-size: 50%;
+	// }
+}
+@media (max-width: 768px) {
+	.app {
+		height: auto;
+		padding-bottom: 400px;
+		background: url('../img/cover-image.jpg') no-repeat bottom center / 300px;
+	}
+	video {
+		display: none;
+	}
+	// .app {
+	// 	height: auto;
+	// 	padding-bottom: 400px;
+	// 	background-position: bottom center;
+	// }
+	.film {
+		padding-top: 2%;
+		&__desrc {
+			font-size: 16px;
+			max-width: 333px;
+		}
+		&__logo {
+			max-width: 100%;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.btn {
+		&__text {
+			display: none;
+		}
+	}
+	.user {
+		&__name {
+			display: none;
+		}
+	}
+	.app {
+		padding-bottom: 350px;
+		background-size: 300px;
 	}
 }
