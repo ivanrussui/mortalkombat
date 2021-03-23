@@ -37,4 +37,14 @@
 		padding-bottom: 350px;
 		background-size: 300px;
 	}
+	.modal {
+		width: 300px;
+		&__close {
+			right: 4px;
+			top: 0;
+		}
+	}
+	.form {
+		width: 100%;
+	}
 }
