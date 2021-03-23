@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# phpmailer чтобы с твоими данными почты не уходил на гитхаб
+/src/mailer
+/dist/mailer
 
 # dependencies
 /node_modules

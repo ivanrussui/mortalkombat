@@ -1,0 +1,40 @@
+@media (max-width: 1024px) {
+	.film {
+		&__logo {
+			max-width: 300px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.app {
+		height: auto;
+		padding-bottom: 400px;
+		background: url('../img/cover-image.jpg') no-repeat bottom center / 300px;
+	}
+	video {
+		display: none;
+	}
+	.film {
+		padding-top: 2%;
+		&__desrc {
+			font-size: 16px;
+			max-width: 333px;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.btn {
+		&__text {
+			display: none;
+		}
+	}
+	.user {
+		&__name {
+			display: none;
+		}
+	}
+	.app {
+		padding-bottom: 350px;
+		background-size: 300px;
+	}
+}

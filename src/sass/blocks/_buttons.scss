@@ -1,0 +1,24 @@
+.btn {
+	padding: 11px 26px;
+	border-radius: 6px;
+	border: none;
+	font-size: 16px;
+	line-height: 140%;
+	background: $btn;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	&__primary {
+		background: $btn2;
+		margin-right: 15px;
+	}
+	&__text {
+		margin-left: 10px;
+		vertical-align: text-bottom;
+	}
+	&_submit {
+		width: 100%;
+		margin-right: 0;
+		margin-top: 15px;
+	}
+}

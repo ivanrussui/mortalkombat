@@ -9,7 +9,6 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 
@@ -21,7 +20,8 @@
 			<a href="https://www.kinopoisk.ru/film/8062/" target="_blank" class="logo">
 				<img src="img/kinopulse.png" alt="kinopulse" class="logo__image">
 			</a>
-			<a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%80%D1%82%D0%B0%D0%BB_%D0%9A%D0%BE%D0%BC%D0%B1%D0%B0%D1%82_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)" target="_blank" class="user">
+			<a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%80%D1%82%D0%B0%D0%BB_%D0%9A%D0%BE%D0%BC%D0%B1%D0%B0%D1%82_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)"
+				target="_blank" class="user">
 				<img src="img/mortal_kombat_logo.png" alt="mortal_kombat_logo" class="user__photo">
 			</a>
 		</header>
@@ -34,9 +34,10 @@
 				<span class="tags__counrty">США</span>
 				<span class="tags__age">18</span>
 			</div>
-			<p class="film__desrc">Ремейк легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>
+			<p class="film__desrc">Ремейк легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где
+				останется только сильнейший</p>
 			<div class="btns">
-				<button class="btn btn__primary">Предзаказ фильма</button>
+				<button id="primary" class="btn btn__primary">Предзаказ фильма</button>
 				<a data-fancybox href="https://www.youtube.com/watch?v=fb1BF9B1MGQ&ab_channel=iVideos" class="btn btn__trailer">
 					<img src="img/vector.svg" alt="vector" class="btn__icon">
 					<span class="btn__text">Смотреть трейлер</span>
@@ -44,11 +45,46 @@
 
 			</div>
 		</section>
+
+		<!-- модалка с формой обратной связи -->
+		<div class="overlay">
+
+			<div class="modal" id="subscribe">
+				<div class="modal__close">&times;</div>
+				<div class="modal__title">Просто напишите ваше имя и почту</div>
+
+				<form class="form" action="#" id="form">
+					<input name="name" placeholder="Ваше имя" type="text">
+					<input name="email" placeholder="Ваш E-mail" type="email">
+					<button class="btn btn__primary btn_submit">Предзаказ фильма</button>
+				</form>
+			</div>
+
+			<div class="modal modal_mini" id="thanks">
+				<div class="modal__close">&times;</div>
+				<div class="modal__title">Спасибо!</div>
+				<div class="modal__subtitle">Информация прийдет вам на почту в ближайшее время!</div>
+			</div>
+		</div>
+
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- возможно дкв надо бу другой где аякс написан -->
+	<!--Подключаем jQuery  -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+	<!-- jQuery validate -->
+	<script src="js/jquery.validate.min.js"></script>
+
+	<!--vide.js для видео фоном-->
 	<script src="js/jquery.vide.min.js"></script>
+
+	<!-- fancybox чтобы видео трейлера открывалось поверх сайта -->
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 	<script src="js/script.js"></script>
 
 </body>
